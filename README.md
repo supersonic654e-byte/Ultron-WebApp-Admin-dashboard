@@ -9,11 +9,34 @@ A responsive static HTML/CSS/JavaScript business dashboard for Supersonic's four
 3. **ULTRON-Vitals-003 · VitalWatch** — upcoming non-diagnostic patient irregularity monitoring.
 4. **ULTRON-MedAssist-004 · MedAssist** — upcoming clinician-authorised screening support and medicine delivery.
 
+## Single-file build
+
+The entire dashboard lives in one self-contained file:
+
+- **`index.html`** — every page, all styling (`<style>`), all behaviour (`<script>`) and every image (embedded as `data:` URIs). It has no external dependencies, so it can be opened directly in a browser or served from any static host.
+
+Navigation between the twelve original pages is handled by a small in-page hash router. The twelve routes are:
+
+| Route                      | Page                                  |
+|----------------------------|---------------------------------------|
+| `#/home`                   | Executive overview                    |
+| `#/robots`                 | Four-product roadmap                  |
+| `#/hospitals`              | Hospital deployments                  |
+| `#/missions`               | Mission operations                    |
+| `#/patient-monitoring`     | Patient monitoring support            |
+| `#/feedback`               | Feedback & upgrade requests           |
+| `#/maintenance`            | Engineering maintenance               |
+| `#/alerts`                 | Central alert management              |
+| `#/uvc`                    | ULTRON-UV-001 working report          |
+| `#/insight`                | ULTRON-Insight-002 development report |
+| `#/vitals`                 | ULTRON-Vitals-003 simulation report   |
+| `#/medassist`              | ULTRON-MedAssist-004 simulation report|
+
 ## Run locally
 
-Open the project folder in VS Code and launch `index.html` with the Live Server extension. No npm or backend is required.
+Just open `index.html` in a browser. No build step, server or backend is required.
 
-You can also run:
+You can also serve it:
 
 ```bash
 python -m http.server 8000
@@ -23,23 +46,6 @@ Then open `http://localhost:8000`.
 
 ## GitHub Pages
 
-Upload the contents of this folder to a GitHub repository, then enable GitHub Pages from the repository settings. The included `.nojekyll` file keeps the static asset structure unchanged.
-
-## Main editable files
-
-- `index.html` — executive dashboard
-- `robots.html` — four-product roadmap
-- `version-uvc.html` — working UV-C report
-- `version-insight.html` — ongoing development report
-- `version-vitals.html` — upcoming simulation report
-- `version-medassist.html` — upcoming simulation report
-- `assets/css/styles.css` — all styling
-- `assets/js/app.js` — drawer, search, local forms and print interactions
+This repository is published with GitHub Pages from the `main` branch root. The included `.nojekyll` file keeps the static file served unchanged.
 
 All hospital and patient records in the interface are sample or simulation data unless explicitly described as working engineering records.
-
-
-## Team Supersonic logo
-
-The admin navigation uses `assets/images/team-supersonic-logo.png`.
-To replace it, overwrite that file with another PNG. The displayed desktop size is controlled by `.supersonic-logo` near the bottom of `assets/css/styles.css` (currently 126 × 126 px).
