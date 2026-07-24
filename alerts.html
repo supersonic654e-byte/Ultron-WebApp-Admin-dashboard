@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Supersonic ULTRON hospital robotics command centre demo interface.">
+  <title>Alerts | Supersonic Command Centre</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body class="">
+<div class="app-shell">
+  <header class="topbar">
+    <button class="menu-button" type="button" data-open-drawer aria-label="Open menu" aria-expanded="false">
+      <span class="menu-lines"><span></span><span></span><span></span></span>
+    </button>
+    <div class="brand-heading">
+      <h1>Supersonic Command Centre</h1>
+      <p>ULTRON Hospital Robotics Operations Platform</p>
+    </div>
+    <label class="top-search" aria-label="Global search">
+      <span class="search-icon"></span>
+      <input id="globalSearch" type="search" placeholder="Search robots, hospitals, missions...">
+    </label>
+    <button class="notification" aria-label="Notifications"><span class="badge-count">7</span></button>
+    <div class="top-date"><strong>25 July 2026</strong><span></span></div>
+    <div class="profile"><div class="avatar">S</div><div class="profile-copy"><strong>Supersonic</strong><span>Command Administrator</span></div></div>
+  </header>
+
+  <div class="drawer-backdrop"></div>
+  <aside class="drawer" aria-label="Application navigation">
+    <div class="drawer-header drawer-logo-header">
+      <a class="brand-lockup brand-logo-link" href="index.html" aria-label="Team Supersonic command centre home">
+        <img class="supersonic-logo" src="assets/images/team-supersonic-logo.png" alt="Team Supersonic logo">
+        <span class="brand-console-label"><strong>ULTRON</strong><small>ADMIN CONSOLE</small></span>
+      </a>
+      <button class="drawer-close" data-close-drawer aria-label="Close menu">×</button>
+    </div>
+    <nav><a class="nav-link" href="index.html"><span class="nav-icon">⌂</span><span>Overview</span></a>
+<a class="nav-link" href="robots.html"><span class="nav-icon">◈</span><span>Robot Portfolio</span></a>
+<a class="nav-link" href="hospitals.html"><span class="nav-icon">▦</span><span>Hospitals</span></a>
+<a class="nav-link" href="missions.html"><span class="nav-icon">◎</span><span>Missions</span></a>
+<a class="nav-link" href="patient-monitoring.html"><span class="nav-icon">♡</span><span>Patient Monitoring</span></a>
+<a class="nav-link" href="feedback.html"><span class="nav-icon">◌</span><span>Feedback</span></a>
+<a class="nav-link" href="maintenance.html"><span class="nav-icon">⌁</span><span>Maintenance</span></a>
+<a class="nav-link" href="alerts.html"><span class="nav-icon">△</span><span>Alerts</span><span class="mini-count">3</span></a></nav>
+    <div class="drawer-product"><strong>Supersonic Command Centre</strong><span>ULTRON Hospital Robotics<br>Operations & AI Analysis Platform</span></div>
+    <div class="drawer-robot"></div>
+    <div class="drawer-footer">© 2024 Supersonic UAP<br>Demonstration interface. All hospital records are sample data.</div>
+  </aside>
+
+  <main class="page">
+
+<div class="page-heading"><div><h1>Central Alert Management</h1><p>Review simplified safety, navigation, sensor and hospital support alerts. Acknowledgement status is saved in your browser.</p></div></div>
+<article class="card"><div class="card-header"><h2>Open Alerts</h2><span class="text-link">3 critical alerts</span></div><div class="card-body table-wrap"><table><thead><tr><th>Alert ID</th><th>Time</th><th>Robot</th><th>Hospital</th><th>Message</th><th>Severity</th><th>Action</th></tr></thead><tbody>
+<tr><td>AL-001</td><td>10:22 AM</td><td>ULTRON-UV-105</td><td>United Hospital</td><td>Navigation heartbeat lost</td><td><span class="priority critical">Critical</span></td><td><button class="button small secondary" data-ack-alert="AL-001">Acknowledge</button></td></tr>
+<tr><td>AL-002</td><td>10:16 AM</td><td>ULTRON-UV-001</td><td>Green Life Hospital</td><td>Human detected during UV-C operation; source disabled safely</td><td><span class="priority high">High</span></td><td><button class="button small secondary" data-ack-alert="AL-002">Acknowledge</button></td></tr>
+<tr><td>AL-003</td><td>10:09 AM</td><td>ULTRON-UV-083</td><td>Evercare Hospital</td><td>LiDAR communication interrupted</td><td><span class="priority high">High</span></td><td><button class="button small secondary" data-ack-alert="AL-003">Acknowledge</button></td></tr>
+<tr><td>AL-004</td><td>10:02 AM</td><td>ULTRON-UV-042</td><td>Square Hospital</td><td>Route completion below expected coverage</td><td><span class="priority medium">Medium</span></td><td><button class="button small secondary" data-ack-alert="AL-004">Acknowledge</button></td></tr>
+</tbody></table></div></article>
+
+  </main>
+  <div class="toast" role="status" aria-live="polite"></div>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

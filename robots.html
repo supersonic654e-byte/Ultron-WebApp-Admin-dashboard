@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Supersonic ULTRON hospital robotics command centre demo interface.">
+  <title>Robot Portfolio | Supersonic Command Centre</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<body class="">
+<div class="app-shell">
+  <header class="topbar">
+    <button class="menu-button" type="button" data-open-drawer aria-label="Open menu" aria-expanded="false">
+      <span class="menu-lines"><span></span><span></span><span></span></span>
+    </button>
+    <div class="brand-heading">
+      <h1>Supersonic Command Centre</h1>
+      <p>ULTRON Hospital Robotics Operations Platform</p>
+    </div>
+    <label class="top-search" aria-label="Global search">
+      <span class="search-icon"></span>
+      <input id="globalSearch" type="search" placeholder="Search robots, hospitals, missions...">
+    </label>
+    <button class="notification" aria-label="Notifications"><span class="badge-count">7</span></button>
+    <div class="top-date"><strong>25 July 2026</strong><span></span></div>
+    <div class="profile"><div class="avatar">S</div><div class="profile-copy"><strong>Supersonic</strong><span>Command Administrator</span></div></div>
+  </header>
+
+  <div class="drawer-backdrop"></div>
+  <aside class="drawer" aria-label="Application navigation">
+    <div class="drawer-header drawer-logo-header">
+      <a class="brand-lockup brand-logo-link" href="index.html" aria-label="Team Supersonic command centre home">
+        <img class="supersonic-logo" src="assets/images/team-supersonic-logo.png" alt="Team Supersonic logo">
+        <span class="brand-console-label"><strong>ULTRON</strong><small>ADMIN CONSOLE</small></span>
+      </a>
+      <button class="drawer-close" data-close-drawer aria-label="Close menu">×</button>
+    </div>
+    <nav><a class="nav-link" href="index.html"><span class="nav-icon">⌂</span><span>Overview</span></a>
+<a class="nav-link" href="robots.html"><span class="nav-icon">◈</span><span>Robot Portfolio</span></a>
+<a class="nav-link" href="hospitals.html"><span class="nav-icon">▦</span><span>Hospitals</span></a>
+<a class="nav-link" href="missions.html"><span class="nav-icon">◎</span><span>Missions</span></a>
+<a class="nav-link" href="patient-monitoring.html"><span class="nav-icon">♡</span><span>Patient Monitoring</span></a>
+<a class="nav-link" href="feedback.html"><span class="nav-icon">◌</span><span>Feedback</span></a>
+<a class="nav-link" href="maintenance.html"><span class="nav-icon">⌁</span><span>Maintenance</span></a>
+<a class="nav-link" href="alerts.html"><span class="nav-icon">△</span><span>Alerts</span><span class="mini-count">3</span></a></nav>
+    <div class="drawer-product"><strong>Supersonic Command Centre</strong><span>ULTRON Hospital Robotics<br>Operations & AI Analysis Platform</span></div>
+    <div class="drawer-robot"></div>
+    <div class="drawer-footer">© 2024 Supersonic UAP<br>Demonstration interface. All hospital records are sample data.</div>
+  </aside>
+
+  <main class="page">
+<div class="page-heading"><div><h1>ULTRON Product Roadmap</h1><p>Four connected hospital robotics products built on one data and autonomy platform. The roadmap starts with the working UV-C robot and progressively adds environment, workflow, patient-observation and medication-support capability.</p></div></div>
+<div class="info-banner"><span class="info-dot">i</span>ULTRON-UV-001 uses working operational records. ULTRON-Insight-002 uses controlled development data. Upcoming product reports use clearly identified simulation data.</div>
+<section class="version-portfolio four-portfolio">
+  <article class="card portfolio-card premium-portfolio-card"><div class="version-top"><span class="version-code">ULTRON-UV-001</span><span class="release-pill">Working</span></div><div class="version-symbol robot-photo"><img src="assets/images/ultron-uv-001.png" alt="ULTRON-UV-001"></div><h3>UV-C Guardian</h3><p>Autonomous disinfection and foundational hospital operations data.</p><ul class="feature-list"><li>Mission runtime and coverage</li><li>Human-presence safety shutdown</li><li>Route, obstacle and occupancy metadata</li><li>UV lamp health and service records</li></ul><a class="button primary" href="version-uvc.html">Open working report</a></article>
+  <article class="card portfolio-card premium-portfolio-card"><div class="version-top"><span class="version-code">ULTRON-Insight-002</span><span class="ongoing-pill">Ongoing</span></div><div class="version-symbol robot-photo"><img src="assets/images/ultron-insight-002.png" alt="ULTRON-Insight-002"></div><h3>Insight Nexus</h3><p>Environment, logistics and privacy-aware human-behaviour intelligence.</p><ul class="feature-list"><li>CO₂, VOC, humidity and noise</li><li>Human movement and queue patterns</li><li>Hospital item and task logistics</li><li>Research-ready admin analytics</li></ul><a class="button primary" href="version-insight.html">Open development report</a></article>
+  <article class="card portfolio-card premium-portfolio-card"><div class="version-top"><span class="version-code">ULTRON-Vitals-003</span><span class="upcoming-pill">Upcoming</span></div><div class="version-symbol"><img src="assets/versions/vitals.svg" alt="VitalWatch"></div><h3>VitalWatch</h3><p>Real-time patient monitoring assistance and irregularity notification.</p><ul class="feature-list"><li>Temperature, SpO₂ and heart-rate trends</li><li>Mobility, fall-risk and bed monitoring</li><li>Possible irregularity alerts</li><li>Nurse acknowledgement workflow</li></ul><a class="button secondary" href="version-vitals.html">Open simulation report</a></article>
+  <article class="card portfolio-card premium-portfolio-card"><div class="version-top"><span class="version-code">ULTRON-MedAssist-004</span><span class="upcoming-pill">Upcoming</span></div><div class="version-symbol"><img src="assets/versions/medassist.svg" alt="MedAssist"></div><h3>MedAssist</h3><p>Basic screening support and verified medicine-delivery workflow.</p><ul class="feature-list"><li>Rule-based screening assistance</li><li>Clinician-authorised medication orders</li><li>Secure patient-order matching</li><li>Delivery confirmation and audit trail</li></ul><a class="button secondary" href="version-medassist.html">Open simulation report</a></article>
+</section>
+<section class="card roadmap-card"><div class="card-header"><h2>Platform Development Logic</h2><span class="text-link">Data → evidence → product upgrade</span></div><div class="card-body"><div class="roadmap-timeline"><div><b>Now</b><strong>UV-C Guardian</strong><span>Collect reliable autonomous mission and safety data.</span></div><div><b>Ongoing</b><strong>Insight Nexus</strong><span>Turn movement, environment and logistics signals into research insights.</span></div><div><b>Next</b><strong>VitalWatch</strong><span>Validate non-diagnostic patient irregularity detection.</span></div><div><b>Future</b><strong>MedAssist</strong><span>Connect screening support with clinician-approved medicine delivery.</span></div></div></div></section>
+</main>
+  <div class="toast" role="status" aria-live="polite"></div>
+</div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
